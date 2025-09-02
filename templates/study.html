@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Buddy - AI Productivity Suite</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AI Productivity Suite</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/mood">Mood Journal</a></li>
+                    <li><a href="/study" class="active">Study Buddy</a></li>
+                    <li><a href="/recipes">Recipe Recommender</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>AI Study Buddy</h2>
+        <p>Paste your study notes and we'll generate interactive flashcards using AI.</p>
+
+        <div class="form-container">
+            <form id="study-form">
+                <div class="form-group">
+                    <label for="study-notes">Your Study Notes</label>
+                    <textarea id="study-notes" placeholder="Paste your notes, textbook excerpts, or any study material here..."></textarea>
+                </div>
+                <button type="submit" class="btn">Generate Flashcards</button>
+            </form>
+        </div>
+
+        <div id="flashcards-result" style="display: none;">
+            <h3>Your Flashcards</h3>
+            <div class="flashcards-container" id="flashcards-container">
+                <!-- Flashcards will be inserted here -->
+            </div>
+        </div>
+
+        <div class="premium-section">
+            <h2>Unlock Unlimited Flashcards</h2>
+            <p>Upgrade to create unlimited flashcards, access advanced study modes, and export your cards.</p>
+            <button id="upgrade-btn" class="btn premium-btn">Upgrade with IntaSend</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 AI Productivity Suite. Built for Hackathon.</p>
+        </div>
+    </footer>
+
+    <script src="../js/flashcards.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

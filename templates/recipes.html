@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Recommender - AI Productivity Suite</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AI Productivity Suite</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/mood">Mood Journal</a></li>
+                    <li><a href="/study">Study Buddy</a></li>
+                    <li><a href="/recipes" class="active">Recipe Recommender</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Recipe Recommender</h2>
+        <p>Select ingredients you have available and we'll suggest recipes using AI.</p>
+
+        <div class="form-container">
+            <form id="recipe-form">
+                <div class="form-group">
+                    <label for="ingredients">Select Ingredients (select multiple)</label>
+                    <select id="ingredients" multiple>
+                        <option value="chicken">Chicken</option>
+                        <option value="beef">Beef</option>
+                        <option value="fish">Fish</option>
+                        <option value="rice">Rice</option>
+                        <option value="pasta">Pasta</option>
+                        <option value="potatoes">Potatoes</option>
+                        <option value="tomatoes">Tomatoes</option>
+                        <option value="onions">Onions</option>
+                        <option value="garlic">Garlic</option>
+                        <option value="carrots">Carrots</option>
+                        <option value="broccoli">Broccoli</option>
+                        <option value="spinach">Spinach</option>
+                        <option value="cheese">Cheese</option>
+                        <option value="eggs">Eggs</option>
+                        <option value="milk">Milk</option>
+                        <option value="flour">Flour</option>
+                        <option value="olive oil">Olive Oil</option>
+                    </select>
+                    <small>Hold Ctrl/Cmd to select multiple ingredients</small>
+                </div>
+                <button type="submit" class="btn">Find Recipes</button>
+            </form>
+        </div>
+
+        <div id="recipes-result" style="display: none;">
+            <h3>Recommended Recipes</h3>
+            <div class="recipes-container" id="recipes-container">
+                <!-- Recipe cards will be inserted here -->
+            </div>
+        </div>
+
+        <div class="premium-section">
+            <h2>Unlock Personalized Meal Plans</h2>
+            <p>Upgrade to get personalized weekly meal plans, grocery lists, and nutritional analysis.</p>
+            <button id="upgrade-btn" class="btn premium-btn">Upgrade with IntaSend</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 AI Productivity Suite. Built for Hackathon.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

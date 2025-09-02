@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Journal - AI Productivity Suite</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AI Productivity Suite</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/mood" class="active">Mood Journal</a></li>
+                    <li><a href="/study">Study Buddy</a></li>
+                    <li><a href="/recipes">Recipe Recommender</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Mood Journal</h2>
+        <p>Write about your day and we'll analyze your emotions using AI.</p>
+
+        <div class="form-container">
+            <form id="mood-form">
+                <div class="form-group">
+                    <label for="journal-entry">How are you feeling today?</label>
+                    <textarea id="journal-entry" placeholder="Write about your day, your feelings, or anything on your mind..."></textarea>
+                </div>
+                <button type="submit" class="btn">Analyze My Mood</button>
+            </form>
+        </div>
+
+        <div id="mood-result" class="chart-container" style="display: none;">
+            <h3>Your Mood Analysis</h3>
+            <p>Sentiment: <span id="sentiment-label"></span> (Confidence: <span id="sentiment-score"></span>)</p>
+            <canvas id="mood-chart"></canvas>
+        </div>
+
+        <div class="premium-section">
+            <h2>Unlock Detailed Mood Analytics</h2>
+            <p>Upgrade to access advanced mood tracking, personalized insights, and export options.</p>
+            <button id="upgrade-btn" class="btn premium-btn">Upgrade with IntaSend</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 AI Productivity Suite. Built for Hackathon.</p>
+        </div>
+    </footer>
+
+    <script src="../js/chart.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

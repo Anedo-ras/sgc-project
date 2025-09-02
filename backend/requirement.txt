@@ -1,0 +1,17 @@
+# Backend framework
+Flask==2.3.3
+Flask-CORS==4.0.0
+
+# Environment variables
+python-dotenv==1.0.0
+
+# API + HTTP requests
+requests==2.31.0
+openai==0.28.0
+
+# Database
+supabase==1.0.3
+mysql-connector-python==8.1.0   # if you want MySQL fallback
+
+# Optional (Payments - IntaSend SDK)
+intasend-python==1.0.6
